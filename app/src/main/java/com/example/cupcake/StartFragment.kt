@@ -63,9 +63,13 @@ class StartFragment : Fragment() {
         // memperbarui view model untuk jumlah yang di beli
         sharedViewModel.setQuantity(quantity)
 
-        // memilih rasa vanila sebai pilihan utama jika tidak memilih rasa
+        // memilih rasa vanila sebai pilihan utama jika pilihan masih kosong
         if (sharedViewModel.hasNoFlavorSet()) {
             sharedViewModel.setFlavor(getString(R.string.vanilla))
+        }
+        // memilih cara pengantaran pickup jika pilihan masih kosong
+        if (sharedViewModel.hasNoPickupSet()) {
+            sharedViewModel.setPickup(getString(R.string.Pickup))
         }
         // Navigasi untuk lanjut ke halaman memilih rasa
         findNavController().navigate(R.id.action_startFragment_to_flavorFragment)
