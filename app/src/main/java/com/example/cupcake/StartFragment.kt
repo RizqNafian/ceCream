@@ -26,7 +26,7 @@ import com.example.cupcake.databinding.FragmentStartBinding
 import com.example.cupcake.model.OrderViewModel
 
 /**
- * kelas untuk StartFragment yang digunakan untuk melakukan order atau pemesanan
+ * kelas StartFragment yang digunakan untuk melakukan order atau pemesanan
  */
 class StartFragment : Fragment() {
 
@@ -63,9 +63,13 @@ class StartFragment : Fragment() {
         // memperbarui view model untuk jumlah yang di beli
         sharedViewModel.setQuantity(quantity)
 
-        // memilih rasa vanila sebai pilihan utama jika tidak memilih rasa
+        // memilih rasa vanila sebagai pilihan utama jika data masih kosong
         if (sharedViewModel.hasNoFlavorSet()) {
             sharedViewModel.setFlavor(getString(R.string.vanilla))
+        }
+        // memilih pickup sebagai pilihan utama jika data masih kosong
+        if (sharedViewModel.hasNoPickupSet()) {
+            sharedViewModel.setPickup(getString(R.string.vanilla))
         }
         // Navigasi untuk lanjut ke halaman memilih rasa
         findNavController().navigate(R.id.action_startFragment_to_flavorFragment)

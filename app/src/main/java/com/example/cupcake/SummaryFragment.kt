@@ -26,7 +26,7 @@ import com.example.cupcake.databinding.FragmentSummaryBinding
 import com.example.cupcake.model.OrderViewModel
 
 /**
- * kelas untuk SummaryFragment yang digunakan untuk menampilkan hasil pesanan
+ * kelas SummaryFragment yang digunakan untuk menampilkan hasil pesanan
  */
 class SummaryFragment : Fragment() {
 

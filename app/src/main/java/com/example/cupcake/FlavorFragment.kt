@@ -26,7 +26,7 @@ import com.example.cupcake.databinding.FragmentFlavorBinding
 import com.example.cupcake.model.OrderViewModel
 
 /**
- * kelas untuk FlavorFragment yang digunakan untuk memilih rasa
+ * kelas FlavorFragment yang digunakan untuk memilih rasa
  */
 class FlavorFragment : Fragment() {
 

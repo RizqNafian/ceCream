@@ -26,7 +26,7 @@ import com.example.cupcake.databinding.FragmentPickupBinding
 import com.example.cupcake.model.OrderViewModel
 
 /**
- * kelas untuk PickupFragment yang digunakan untuk memilih cara pengampilan
+ * kelas PickupFragment yang digunakan untuk memilih cara pengampilan
  */
 class PickupFragment : Fragment() {
 

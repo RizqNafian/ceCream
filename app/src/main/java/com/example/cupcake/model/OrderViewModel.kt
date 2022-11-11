@@ -31,8 +31,7 @@ private const val PRICE_SIZE= 2.00
 private const val PRICE_FOR_DELIVERY = 3.00
 
 /**
- * [OrderViewModel] holds information about a cupcake order in terms of quantity, flavor, and
- * pickup date. It also knows how to calculate the total price based on these order details.
+ * kelas OrderViewModel yang digunakan sebagi model (fungsi) untuk tampilan
  */
 class OrderViewModel : ViewModel() {
 
